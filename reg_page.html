@@ -16,9 +16,6 @@
             <h1>Register with Destiny Tours and Travels</h1>
         </header>
         <main>
-
-        </main>
-        <footer>
             <form action="#successs.html" method="GET">
                 <h3>Tell us About Yourself</h3>
                 <br>
@@ -37,7 +34,51 @@
                 <input type="date" id="dob">
                 <br>
                 <h3>Choose your UserId and Password</h3>
+                <br>
+				<label for="uid">Choose a User Id* :</label>
+				<input id="uid" type="text" required>
+				<br>
+				<label for="pwd">Create your password* :</label>
+				<input id="pwd" type="password" required>
+				<br>
+				<label for="ques">Choose your security question* :</label>
+				<select id="ques" required>
+					<option value="">--Select--</option>
+					<option value="actor">my favorite actor</option>
+					<option value="food">my favorite food</option>
+					<option value="birth">my birth place</option>
+					<option value="pet">my pet's name</option>
+				</select>
+				<br>
+				<label for="ans">Your answer* :</label>
+				<input id="ans" type="text" required>
+				<br>
+				<h3>Tell us about your requirements</h3>
+				<br>
+				<label for="place">Places you want to visit* :</label>
+				<select id="place" required>
+					<option value="">--Select--</option>
+					<option value="ooty">Ooty</option>
+					<option value="goa">Goa</option>
+					<option value="agra" disabled>Agra</option>
+				</select>
+				<br>
+				<label for="alert">Do you want a email-alert?</label>
+				<input id="alert" type="checkbox" value="Y">
+				<br>
+				<label for="extra">Do you have any special requirements?</label>
+				<textarea id="extra" rows="2" col="15" placeholder="Enter the details"></textarea>
+				<br>
+				<div>
+					<small>* marked fields are mandatory</small>
+				</div>
+				<br>
+				<button type="submit">Submit</button>
+				<br><br><br>
             </form>
+        </main>
+        <footer>
+            <center>&copy; Copyright 2019.</center>
         </footer>
     </body>
 </html>
