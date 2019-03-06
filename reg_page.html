@@ -6,21 +6,21 @@
         <meta name="application-name" content="Travel Destiny">
         <meta name="description" content="Destiny Tour and Travels is a one stop destination for all enthusiastic 
             travelers to explore amazing places. They help inspire people to travel more and explore their world.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="refresh" content="30">
 	    
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
 
         <title>Travel Destiny</title>
     </head>
-    <body>
+    <body class="container">
         <header>
             <center><h1>Register with Destiny Tours and Travels</h1><center>
         </header>
-        <main>
+        <main class="jumbotron">
             <form name="registeration" action="#success.html" method="GET">
-				<table align="center">
-					<thead>
+				<table align="center" class="table table-hover">
+					<thead class="thead-dark">
 						<tr>
 							<th colspan="2" align="left">Tell us About Yourself</th>
 						</tr>
@@ -28,26 +28,35 @@
 					<tbody>
 						<tr>
 							<td align="right"><label for="name">Name* :</label></td>
-							<td><input id="name" type="text" maxlength="15" required></td>
+							<td><input class="form-control" id="name" type="text" maxlength="15" required></td>
 						</tr>
 						<tr>
 							<td align="right"><label for="email">Email Id* :</label></td>
-							<td><input type="email" id="email" required></td>
+							<td><input class="form-control" type="email" id="email" required></td>
 						</tr>
 						<tr>
-							<td align="right"><label for="gender">Gender :</label></td>
+							<td align="right"><label>Gender :</label></td>
 							<td>
-								<input id="gender" type="radio" value="male" name="gen">Male
-								<input id="gender" type="radio" value="female" name="gen">Female
-								<input id="gender" type="radio" value="others" name="gen">Others
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gen" id="gender1" value="male">
+									<label class="form-check-label" for="gender1">Male</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gen" id="gender1" value="female">
+									<label class="form-check-label" for="gender1">Female</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gen" id="gender3" value="others">
+									<label class="form-check-label" for="gender3">Others</label>
+								</div>
 							</td>
 						</tr>
 						<tr>
 							<td align="right"><label for="dob">Date Of Birth :</label></td>
-							<td><input type="date" id="dob"></td>
+							<td><input class="form-control" type="date" id="dob"></td>
 						</tr>
 					</tbody>
-					<thead>
+					<thead class="thead-dark">
 						<tr>
 							<th colspan="2" align="left">Choose your UserId and Password</th>
 						</tr>
@@ -55,34 +64,34 @@
 					<tbody>
 						<tr>
 							<td align="right"><label for="uid">Choose a User Id* :</label></td>
-							<td><input id="uid" type="text" required></td>
+							<td><input class="form-control" id="uid" type="text" required></td>
 						</tr>
 						<tr>
 							<td align="right"><label for="pwd">Create your password* :</label></td>
-							<td><input id="pwd" type="password" required></td>
+							<td><input class="form-control" id="pwd" type="password" required></td>
 						</tr>
 						<tr>
 							<td align="right"><label for="rpwd">Re-type your password* :</label></td>
-							<td><input id="rpwd" type="password" required></td>
+							<td><input class="form-control" id="rpwd" type="password" required></td>
 						</tr>
 						<tr>
 							<td align="right"><label for="ques">Choose your security question* :</label></td>
 							<td>
-								<select id="ques" required>
+								<select class="form-control" id="ques" required>
 									<option value="">--Select--</option>
-									<option value="actor">my favorite actor</option>
-									<option value="food">my favorite food</option>
-									<option value="birth">my birth place</option>
-									<option value="pet">my pet's name</option>
+									<option value="actor">My favorite actor</option>
+									<option value="food">My favorite food</option>
+									<option value="birth">My birth place</option>
+									<option value="pet">My pet's name</option>
 								</select>
 							</td>
 						</tr>
 						<tr>
 							<td align="right"><label for="ans">Your answer* :</label></td>
-							<td><input id="ans" type="text" required></td>
+							<td><input class="form-control" id="ans" type="text" required></td>
 						</tr>
 					</tbody>
-					<thead>
+					<thead class="thead-dark">
 						<tr>
 							<th colspan="2" align="left">Tell us about your requirements</th>
 						</tr>
@@ -91,23 +100,26 @@
 						<tr>
 							<td align="right"><label for="place">Places you want to visit* :</label></td>
 							<td>
-								<select id="place" required>
+								<select class="form-control" id="place" required>
 									<option value="">--Select--</option>
 									<option value="ooty">Ooty</option>
 									<option value="goa">Goa</option>
 									<option value="agra" disabled>Agra</option>
 								</select>
-								&nbsp; &nbsp;
 								<a href="./places.html" target="_blank">Place details</a>
 							</td>
 						</tr>
 						<tr>
 							<td align="right"><label for="alert">Do you want a email-alert?</label></td>
-							<td><input id="alert" type="checkbox" value="Y"></td>
+							<td>
+								<div class="form-group form-check">
+									<input class="form-check-input" id="alert" type="checkbox" value="Y">
+								</div>
+							</td>
 						</tr>
 						<tr>
 							<td align="right"><label for="extra">Do you have any special requirements?</label></td>
-							<td><textarea id="extra" rows="2" col="15" placeholder="Enter the details"></textarea></td>
+							<td><textarea class="form-control" id="extra" rows="2" col="15" placeholder="Enter the details"></textarea></td>
 						</tr>
 						<tr>
 							<td></td>
@@ -115,22 +127,17 @@
 						</tr>
 						<tr>
 							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
 							<td>
-								<button type="submit">Submit</button>
+								<button class="btn btn-success" type="submit">Submit</button>
 								&nbsp; &nbsp; &nbsp; &nbsp;
-								<a href="reg_page.html" target="_self">Cancel</a>
+								<a class="btn btn-outline-danger" href="reg_page.html" target="_self">Cancel</a>
 							</td>
 						</tr>
 					</tbody>
 				</table>
             </form>
         </main>
-        <footer>
-			<br><br><br>
+        <footer class="card-footer">
             <center>&copy; Copyright 2019.</center>
         </footer>
 		    
